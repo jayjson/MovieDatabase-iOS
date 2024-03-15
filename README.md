@@ -1,4 +1,9 @@
 #  Movie Database App
+
+|Home Screen|Details Page|
+|-------|-------|
+|![Movie Database App screenshot1 2](https://github.com/jayjson/MovieDatabase-iOS/assets/10294167/bf0e7e59-70a8-4a6e-a8f8-d2c1c6297fc9)|![Movie Database App screenshot2 2](https://github.com/jayjson/MovieDatabase-iOS/assets/10294167/16776b52-c2b2-4925-8166-1086f42cdaa3)|
+
 ## Overview
 - This project contains an app that fetches and displays a list of popular movies from the TMDB API. The app uses SwiftUI and the MVVM + Coordinator architectural pattern to support quick product iterations, and its core functionalities are covered by unit tests to prevent regressions.
 - For more info on the TMDB API, visit: https://developers.themoviedb.org/3/getting-started/introduction.

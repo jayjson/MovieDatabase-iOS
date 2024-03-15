@@ -62,7 +62,14 @@ struct MovieCell: View {
     }
 }
 
-//
-//#Preview {
-//    MovieCell()
-//}
+#Preview {
+    HStack {
+        MovieCell(movie: PopularMovie.withPoster, tapHandler: {})
+            .padding()
+            .previewLayout(.sizeThatFits)
+
+        MovieCell(movie: PopularMovie.withoutPoster, tapHandler: {})
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}

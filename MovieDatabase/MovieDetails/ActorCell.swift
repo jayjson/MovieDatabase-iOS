@@ -58,6 +58,13 @@ struct ActorCell: View {
     }
 }
 
-//#Preview {
-//    ActorCell()
-//}
+#Preview {
+    HStack {
+        ActorCell(castMember: .mock1) {
+            print("ActorCell1 tapped")
+        }
+        ActorCell(castMember: .mock2) {
+            print("ActorCell2 tapped")
+        }
+    }
+}

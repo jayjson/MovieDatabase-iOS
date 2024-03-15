@@ -32,8 +32,8 @@
 
 ## How to Run the App
 1. Open the Xcode project file located in the root folder using Xcode 14.0 or later.
-2. Navigate to the MovieDatabaseApp.swift file and insert a valid TMDB API key into the MovieCoordinator initializer.
+2. Navigate to the MovieDatabaseApp.swift file and insert a valid TMDB API key into the `MovieCoordinator` initializer.
 3. Build and run the application on iOS 16 or later.
 
-## 3rd party libraries or copied code you used
+## 3rd party libraries used
 - Kingfisher for image loading (https://github.com/onevcat/Kingfisher)

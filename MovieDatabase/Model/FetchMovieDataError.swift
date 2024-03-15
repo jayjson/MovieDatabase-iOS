@@ -20,7 +20,7 @@ enum FetchMovieDataError: Error, Equatable {
     var userFriendlyDescription: String {
         switch self {
         case .apiKeyMissing:
-            return "Add an API key in MovieDatabaseApp"
+            return "Add an API key in MovieDatabaseApp.swift"
         case .invalidUrl:
             return "An invalid URL was used."
         case .couldNotPerform:

@@ -65,8 +65,11 @@ struct ActorCell: View {
         ActorCell(castMember: .mock1) {
             print("ActorCell1 tapped")
         }
+        .padding()
         ActorCell(castMember: .mock2) {
             print("ActorCell2 tapped")
         }
+        .padding()
     }
+    .previewLayout(.sizeThatFits)
 }

@@ -12,37 +12,6 @@ struct MovieDetailsView: View {
     @ObservedObject var coordinator: MovieCoordinator
     @StateObject var viewModel: MovieDetailsViewModel
     
-//    var body: some View {
-//        ScrollView {
-//            if let movieDetails = viewModel.movieDetails {
-//                movieDetailSections(with: movieDetails)
-//            }
-//            Group {
-//                switch viewModel.fetchMovieDetailsState {
-//                case .ready, .succeeded:
-//                    Text("🍿 Movie Database")
-//                case .inProgress:
-//                    VStack {
-//                        Spacer()
-//                        ProgressView()
-//                        Spacer()
-//                    }
-//                case .failed(let fetchError):
-//                    VStack {
-//                        Spacer()
-//                        Text(fetchError.userFriendlyDescription)
-//                            .multilineTextAlignment(.center)
-//                            .padding()
-//                        Spacer()
-//                    }
-//                }
-//            }
-//
-//        }
-//        .navigationTitle(viewModel.title)
-//        .navigationBarTitleDisplayMode(.inline)
-//    }
-    
     var body: some View {
         Group {
             switch viewModel.fetchMovieDetailsState {
@@ -190,7 +159,3 @@ struct MovieDetailsView: View {
         }
     }
 }
-
-//#Preview {
-//    MovieDetails()
-//}

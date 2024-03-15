@@ -66,12 +66,14 @@ struct MovieCell: View {
 
 #Preview {
     HStack {
-        MovieCell(movie: PopularMovie.withPoster, tapHandler: {})
-            .padding()
-            .previewLayout(.sizeThatFits)
-
-        MovieCell(movie: PopularMovie.withoutPoster, tapHandler: {})
-            .padding()
-            .previewLayout(.sizeThatFits)
+        MovieCell(movie: PopularMovie.withPoster) {
+            print("MovieCell1 tapped")
+        }
+        .padding()
+        MovieCell(movie: PopularMovie.withoutPoster) {
+            print("MovieCell2 tapped")
+        }
+        .padding()
     }
+    .previewLayout(.sizeThatFits)
 }

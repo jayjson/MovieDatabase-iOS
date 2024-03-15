@@ -81,8 +81,3 @@ extension PopularMoviesView {
         static let sideMargin: CGFloat = 16
     }
 }
-
-
-//#Preview {
-//    PopularMovies()
-//}

@@ -41,7 +41,9 @@ struct ActorCell: View {
     
     private var fallbackImage: UIImage? {
         guard let image = UIImage(systemName: "person", withConfiguration: UIImage.SymbolConfiguration(pointSize: Constant.fallbackIconHeight, weight: .light)) else { return nil }
-        return image.imageWithInsets(insets: .init(top: 40, left: 40, bottom: 40, right: 40))
+        return image
+            .withTintColor(.systemGray, renderingMode: .alwaysTemplate)
+            .imageWithInsets(insets: .init(top: 40, left: 40, bottom: 40, right: 40))
     }
 
     private var nameLabel: some View {

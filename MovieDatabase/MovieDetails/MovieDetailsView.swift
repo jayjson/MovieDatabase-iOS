@@ -105,7 +105,9 @@ struct MovieDetailsView: View {
     
     private var fallbackImage: UIImage? {
         guard let image = UIImage(systemName: "popcorn", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .light)) else { return nil }
-        return image.imageWithInsets(insets: .init(top: 40, left: 80, bottom: 40, right: 80))
+        return image
+            .withTintColor(.systemGray, renderingMode: .alwaysTemplate)
+            .imageWithInsets(insets: .init(top: 40, left: 40, bottom: 40, right: 40))
     }
     
     private func descriptionSection(with movieDetails: MovieDetails) -> some View {

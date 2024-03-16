@@ -1,4 +1,4 @@
-#  Movie Database App
+#  Movie Database App (SwiftUI)
 
 |Home Screen|Details Page|
 |-------|-------|
